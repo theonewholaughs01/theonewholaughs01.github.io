@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Automation Data Quality Demo</title>
+  <meta name="description" content="A safe demonstration of CSV cleanup, validation, issue logging, and quality reporting with Python.">
+  <style>
+    :root { color-scheme: dark; --bg: #071a33; --panel: #0d2a4b; --ink: #f7fbff; --muted: #b9cadb; --teal: #37c7d8; --line: rgba(255,255,255,.14); }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: linear-gradient(145deg, var(--bg), #0b3153); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+    main { max-width: 980px; margin: 0 auto; padding: 56px 22px 80px; }
+    .eyebrow { color: var(--teal); letter-spacing: .14em; font-size: .78rem; font-weight: 700; text-transform: uppercase; }
+    h1 { max-width: 720px; font-size: clamp(2.2rem, 6vw, 4.8rem); line-height: 1.02; margin: 16px 0; }
+    h2 { margin-top: 0; font-size: 1.35rem; }
+    p { color: var(--muted); max-width: 760px; }
+    .notice { border: 1px solid var(--teal); border-radius: 14px; padding: 15px 18px; margin: 28px 0 42px; background: rgba(55,199,216,.08); }
+    .notice strong { color: var(--ink); }
+    .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 30px 0 44px; }
+    .step, .card { border: 1px solid var(--line); background: rgba(255,255,255,.06); border-radius: 16px; padding: 20px; }
+    .step b { display: block; color: var(--teal); margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .card ul { color: var(--muted); padding-left: 20px; }
+    code { color: #d8f7ff; background: rgba(0,0,0,.25); border-radius: 6px; padding: 2px 6px; }
+    .button { display: inline-block; color: var(--bg); background: var(--teal); border-radius: 9px; padding: 11px 16px; text-decoration: none; font-weight: 700; margin-top: 10px; }
+    footer { color: var(--muted); margin-top: 44px; font-size: .9rem; }
+    @media (max-width: 720px) { .flow, .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Python automation demonstration</div>
+    <h1>Input. Transform. Validate. Document.</h1>
+    <p>This small portfolio project demonstrates a transparent CSV quality workflow built with Python. It is designed to show process and testing discipline, not to claim client results.</p>
+    <div class="notice"><strong>Demonstration project — no client data or client results claimed.</strong><br>Use safe synthetic data only. Review all generated outputs before using any workflow on real information.</div>
+    <div class="flow">
+      <div class="step"><b>01 — INPUT</b>Read one CSV file and preserve the original.</div>
+      <div class="step"><b>02 — TRANSFORM</b>Trim headers and values and normalize common blank markers.</div>
+      <div class="step"><b>03 — VALIDATE</b>Report duplicate rows and missing or blank values without silently deleting data.</div>
+      <div class="step"><b>04 — DOCUMENT</b>Write a cleaned copy, issue log, and JSON quality report.</div>
+    </div>
+    <div class="grid">
+      <section class="card"><h2>What is included</h2><ul><li>Transparent Python script</li><li>Safe synthetic CSV fixture</li><li>Cleaned CSV output</li><li>Issue log and quality report</li></ul></section>
+      <section class="card"><h2>What is not claimed</h2><ul><li>No client delivery or business result</li><li>No production guarantee</li><li>No regulated-data handling</li><li>No inferred business rules</li></ul></section>
+    </div>
+    <p><a class="button" href="https://github.com/theonewholaughs01/theonewholaughs01.github.io/tree/main/python-automation-demo">View source on GitHub</a></p>
+    <footer>Oluwafolafunmi · Entry-level developer focused on practical Python automation, data processing, debugging, testing, and documentation.</footer>
+  </main>
+</body>
+</html>
